@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>About Nathaniel Owutubo</title>
+		<style>
+		
+			*{
+				padding:0px;
+				margin:opx;
+				box-sizing:border-box;
+			}
+			body{
+				width:100%;
+			}
+			ul{
+				list-style: none;
+			}
+			a{
+				text-decoration:none;
+				font-weight:bold;
+			}
+			header {
+				background-color: #0D160B;
+				color: #F5F3F5;
+				padding: 20px;
+				text-align: center;
+				max-width:100%;
+			}
+			
+			header h1 {
+				margin: 0;
+				font-size: 2.5em;
+			}
+			
+			nav ul {
+				padding-bottom: 20px;
+				margin: 10px 0 0 0;
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+				flex-wrap:wrap;
+				height:15px;
+			}
+			
+			nav a {
+				color: #F5F3F5;
+				font-weight: bold;
+				
+			}
+			/* Use a high contrast between the background and text colors */
+			body{
+			  background-color: #F5F3F5;
+			  color: #0D160B;
+			}
+			/* Use a clear and consistent layout */
+			main{
+			  display:flex;
+			  flex-direction:row;
+			  align-items:center;
+			  padding:20px;
+			  
+			}
+			
+			.about p, h2{
+				font-size:1.8em;
+				color:#F5F3F5;
+				margin:15px;
+			}
+			.about, .photo{
+				flex-grow:1;
+				width:100%;
+				border:1px solid #0D160B;
+			}
+			#bna{
+				font-size:3.5em;
+			}
+			.about{
+				background-color:#0D160B;
+				height:500px;
+				padding:60px 20px 100px 20px;
+				flex-grow:1;
+				display:flex;
+				flex-direction:column;
+				text-align:center;
+				width:55%;
+			}
+			.photo{
+				height:500px;
+				width:40%;
+				
+				flex-grow:1;
+			}
+
+			/* Default styles for desktop screens */
+			#about{
+				display:flex;
+				padding:40px;
+				text-align:center;
+				min-height:400px;
+				justify-content:center;
+			}
+
+			.profile-photo{
+			  width: 100%;
+			  height: 100%;
+			  border-radius:1;
+			}
+			.socials1{
+				display:flex;
+				flex-direction:column;
+				width:5%;
+				background-color:#FEEA00;
+				height:500px;
+				justify-content:center;
+				align-items:center;
+				
+			}
+			.socials1 img{
+				height:20px;
+				width:20px;
+				margin:50px;
+			}
+
+			.cta{
+			  background-color: #ffd700; /* gold */
+			  color: #0D160B;;
+			  border: none;
+			  padding: 10px 20px;
+			  font-size: 18px;
+			  cursor: pointer;
+			  font-weight:bold;
+			}
+
+			.cta:hover{
+				background-color: #0D160B;
+				color:#F5F3F5;
+			}
+			
+			#projects{
+				display:flex;
+				flex-direction:column;
+				background-color: #0D160B;
+				padding: 40px;
+				text-align: center;
+			}
+
+			.project-grid{
+			  display:flex;
+			  flex-direction:row;
+			  gap: 30px;
+			  justify-content:center;
+			  align-items:center;
+			  width:100%;
+			}
+
+			.project-grid li{
+			  background-color: #f0f0f0;
+			  padding: 20px;
+			  border: 1px solid #ddd;
+			}
+
+			.project-grid img{
+			  width: 100%;
+			  height: 150px;
+			  object-fit: cover;
+			  border-radius: 10px 10px 0 0;
+			}
+
+			.btn{
+			  background-color: gray; /* gold */
+			  color: black;
+			  border: none;
+			  padding: 10px 20px;
+			  font-size: 18px;
+			  cursor: pointer;
+			}
+
+			.btn:hover{
+			  background-color: #0D160B;
+			  color:gray;
+			  
+			}
+			#stacks{
+			  padding: 40px;
+			  text-align: center;
+			  color:#0D160B;
+			}
+			#stacks h2{
+				color:#0D160B;
+			}
+
+			.stack-list{
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: center;
+			}
+
+			.stack-list li{
+			  margin: 20px;
+			  text-align: center;
+			}
+
+			.stack-list i{
+			  font-size:36px;
+			}
+
+			.stack-list h3{
+			  margin-top:10px;
+			}
+			.socials{
+				display:flex;
+				flex-direction:row;
+				width:100%;
+				height:30px;
+				justify-content:center;
+				align-items:center;
+			}
+			.contact{
+				display:flex;
+				flex-direction:column;
+				justify-content:center;
+				align-items:center;
+				width:100%;
+			}
+			.contact span{
+				padding:0 50px;
+			}
+			.socials img{
+				height:30px;
+				width:30px;
+				margin:30px;
+			}
+			footer{
+				display:flex;
+				justify-content:center;
+				background-color:#0D160B;
+				color:#F5F3F5;
+				height:;
+			}
+
+
+			/* Media query for tablet screens (930px and below) */
+			@media all and (max-width:920px) {
+				.about p, h2{
+					font-size:1.2em;
+					margin:15px;
+				}
+				#bna{
+				font-size:2.2em;
+			  #about{
+				padding:20px;
+			  }
+
+			  #projects{
+				padding:20px;
+			  }
+			}
+			@media all and (max-width:600px) {
+				.about p, h2{
+					font-size:1.1em;
+					margin:15px;
+					flex-wrap:wrap;
+				}
+				#bna{
+					font-size:2em;
+				#about{
+					padding:20px;
+					flex-direction:column;
+					align-items:center;
+					flex-wrap:wrap;
+				}
+				#project-grid li{
+				flex-grow:1;
+				width:100%;
+			}
+				.btn{
+				gap:20px;
+				font-size:8px;
+			  }
+
+				#projects{
+					padding:20px;
+				}
+			}
+
+			/* Media query for mobile screens (539px and below) */
+			@media (max-width: 490px) {
+				#about{
+					padding:10px;
+					flex-direction:column;
+					align-items:center;
+					flex-wrap:wrap;
+				}
+				.socials1{
+					display:flex;
+					flex-direction:row;
+					width:100%;
+					background-color:#FEEA00;
+					height:30px;
+					justify-content:center;
+					align-items:center;
+				
+			}
+				.about{
+					padding-top:40px;
+					flex-grow:1;
+					width:100%;
+					height:300px;
+				}
+				.about p, h2{
+					font-size:1em;
+					flex-wrap:wrap;
+				}
+				.photo{
+					height:300px;
+					width:100%;
+			#bna{
+				font-size:2em;
+			}
+			  .btn{
+				gap:20px;
+				font-size:7px;
+			  }
+			 
+			  .project-grid{
+			  display:flex;
+			  flex-direction:column;
+			  gap:20px;
+			  width:100%;
+			  
+			}
+			nav{
+				min-height:100px;
+			}
+			
+			
+			#project-grid li{
+				flex-grow:;
+				width:80%;
+			}
+			  #projects{
+			    padding: 40px;
+			    text-align: center;
+				width:100%;
+				flex-grow:;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1></h1>
+		  <nav>
+			<ul>
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#abtme">About</a></li>
+			   <li><a href="#projects">Projects</a></li>
+			  <li><a href="#">Contact</a></li>
+			  <li><a href="#stacks">My Tech Stack</a></li>
+			</ul>
+		  </nav>
+		</header>
+
+		<main id="about">
+				<section class="socials1">
+					<a href="#"><img src="fb.png" class="icons"></a>
+					<a href="#"><img src="x.png" class="icons"></a>
+					<a href="#"><img src="lnkdin.png" class="icons"></a>
+				</section>
+				<section class="about">
+					<h2 id="abtme">About Me</h2>
+					<p id="bna">I'm Nathaniel Owutubo</p> <p>A creative web application developer that transforms ideas to amazing wed applications that profer solution to world problems.</p>
+				</section>
+				<section class="photo">
+					<img src="naxi.jpg" alt="nath" class="profile-photo">
+				</section>
+				
+		</main>
+		<section id="projects">
+		  <h2>My Projects</h2>
+		  <div class="project-grid">
+			<div class="pro">
+			  <img src="work.png" alt="Project 1">
+			  <h3>Project 1</h3>
+			  <p>description</p>
+			  <a href="#" class="btn">View Live Demo</a><br><br><br>
+			  <a href="#" class="btn">View Code on GitHub</a>
+			</div>
+			<div class="pro">
+			  <img src="work.png" alt="Project 2">
+			  <h3>Project 2</h3>
+			  <p>description</p>
+			  <a href="#" class="btn">View Live Demo</a><br><br><br>
+			  <a href="#" class="btn">View Code on GitHub</a>
+			</div>
+		  </div>
+		</section>
+		<section id="stacks">
+		  <h2>My Tech Stack</h2>
+		  <ul class="stack-list">
+			<li>
+			  <i class="fab fa-html5"></i>
+			  <h3>HTML</h3>
+			</li>
+			<li>
+			  <i class="fab fa-css3-alt"></i>
+			  <h3>CSS</h3>
+			</li>
+			<li>
+			  <i class="fab fa-git"></i>
+			  <h3>GIT</h3>
+			</li>
+			<li>
+			  <i class="fab fa-gh"></i>
+			  <h3>GITHUB</h3>
+			</li>
+		  </ul>
+		</section>
+		<section class="contact">
+			<h3>Contact Me<h3>
+			<p>Phone: +2348 14715 6213</p>
+			<p>Email: nathanielowutubo@gmail.com</p><br><br><br>
+			<section class="socials">
+				<a href="#"><img src="wats.png" class="icons"></a>
+				<a href="#"><img src="fb.png" class="icons"></a>
+				<a href="#"><img src="x.png" class="icons"></a>
+				<a href="#"><img src="lnkdin.png" class="icons"></a>
+			</section>
+		</section>
+		
+		<footer>
+		  <p>&copy; 2023 Nathaniel Owutubo</p>
+		</footer>
+	</body>
+</html>
